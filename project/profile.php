@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <img src="./images/home_menu_item.png" alt="дом">
+        <img src="./images/user_menu_item.png" alt="пользователь">
+        <img src="./images/plus_menu_item.png" alt="ещё">
+    </nav>
+    <div>
+        <img src="./images/profile_photo.jpg" alt="фото профиля">
+        <h1>Ваня Денисов</h1>
+        <p>Привет! Я системный аналитик в ACME :) Тут моя жизнь только для самых классных!</p>
+        <div>
+            <img src="./images/posts_icon.png" alt="пост">
+            <p>43 поста</p>
+        </div>
+        <div>
+            <img src="./images/post1.jpg" alt="пост">
+            <img src="./images/post2.jpg" alt="пост">
+            <img src="./images/post3.jpg" alt="пост">
+            <img src="./images/post4.jpg" alt="пост">
+            <img src="./images/post5.jpg" alt="пост">
+            <img src="./images/post6.jpg" alt="пост">
+            <img src="./images/post7.jpg" alt="пост">
+            <img src="./images/post8.jpg" alt="пост">
+            <img src="./images/post9.jpg" alt="пост">
+            <img src="./images/post10.jpg" alt="пост">
+            <img src="./images/post11.jpg" alt="пост">
+            <img src="./images/post12.jpg" alt="пост">
+            <img src="./images/post13.jpg" alt="пост">
+            <img src="./images/post14.jpg" alt="пост">
+            <img src="./images/post15.jpg" alt="пост">
+
+        </div>
+    </div>
+</body>
+
+</html>
