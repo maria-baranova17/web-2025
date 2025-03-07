@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #F4F4F4;
+    width: 72px;
+    min-height: 100vh;
+    position: fixed;
+    gap: 16px;
+    padding-top: 40px;
+}
+
+.menu_item {
+    width: 40px;
+    height: 40px;
+    margin: 0;
+}
+
+.main_content {
+    padding-top: 73px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 474px;
+    gap: 16px;
+    padding: 16px 0;
+
+}
+
+.post_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post_header_person-information {
+    display: flex;
+    width: 150px;
+    gap: 10px;
+    align-items: center;
+}
+
+.post_header_person-name {
+    font: 500 15px/18px "Golos Text", sans-serif;
+    line-height: 18px;
+}
+
+.post_header_person-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+}
+
+.post_header_person-editicon {
+    width: 24px;
+    height: 24px;
+}
+
+.post_likes {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    gap: 3px;
+    width: 68px;
+    height: 30px;
+    background-color: rgba(34, 34, 34, 0.05);
+    border-radius: 8px;
+    font: 15px/18px "Golos Text", sans-serif;
+    color: rgba(34, 34, 34, 1)
+}
+
+.post_text {
+    font: 15px/18px "Golos Text", sans-serif;
+    color: rgba(34, 34, 34, 1);
+    margin: 0;
+}
+
+.post_time {
+    font: 14px/18px "Golos Text", sans-serif;
+    color: rgba(34, 34, 34, 0.5);
+    margin: 0;
+}
