@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-right: 1px solid #F4F4F4;
+    width: 72px;
+    min-height: 100vh;
+    position: fixed;
+    gap: 16px;
+    padding-top: 40px;
+}
+
+.menu_item {
+    width: 40px;
+    height: 40px;
+}
+
+.main_content {
+    padding: 73px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile_photo {
+    width: 123px;
+    height: 123px;
+    border-radius: 16px;
+}
+
+.profile_name {
+    font: 500 32px/32px "Golos Text", sans-serif;
+    letter-spacing: -0.25px;
+    margin-top: 20px;
+}
+
+.profile_text {
+    font: 400 14px/18px "Golos Text", sans-serif;
+    letter-spacing: -0.15px;
+    max-width: 361px;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 12px;
+}
+
+.profile_information {
+    display: flex;
+    gap: 16px;
+    background-color: #F2F3F5;
+    font: 400 14px/18px "Golos Text", sans-serif;
+    border-radius: 6px;
+    padding: 6px 10px;
+    margin-bottom: 42px;
+}
+
+.profile_posts {
+    display: flex;
+    max-width: 972px;
+    flex-wrap: wrap;
+}
+
+.profile_post {
+    width: 322px;
+    height: 322px;
+}

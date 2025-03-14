@@ -12,9 +12,9 @@
 
 <body>
     <nav class="menu">
-        <img class="menu_item" src="./images/home_menu_item.png" alt="дом">
-        <img class="menu_item" src="./images/user_menu_item.png" alt="пользователь">
-        <img class="menu_item" src="./images/plus_menu_item.png" alt="ещё">
+        <img class="menu_item" src="./images/home_menu_item.svg" alt="Домашняя страница">
+        <img class="menu_item" src="./images/user_menu_item.svg" alt="Профиль">
+        <img class="menu_item" src="./images/plus_menu_item.svg" alt="Добавить пост">
     </nav>
     <div class="main_content">
         <article class="post">
@@ -23,7 +23,7 @@
                     <img class="post_header_person-image" src="./images/user_photo.jpg" alt="фото профиля">
                     <h2 class="post_header_person-name">Ваня Денисов</h2>
                 </div>
-                <img class="post_header_person-editicon" src="./images/edit_icon.png" alt="редактировать">
+                <img class="post_header_person-editicon" src="./images/edit_icon.svg" alt="редактировать">
             </div>
             <img src="./images/post_photo.jpg" alt="фотография поста">
 
