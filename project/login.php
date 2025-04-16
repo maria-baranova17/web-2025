@@ -8,7 +8,7 @@
 
 <body>
     <h1>Войти</h1>
-    <img src="./images/login_photo.jpg" alt="счастливый мужчина">
+    <img src="../images/login_photo.jpg" alt="счастливый мужчина">
 
     <form class="form_auth_style" action="#" method="post">
         <label>Электропочта</label>

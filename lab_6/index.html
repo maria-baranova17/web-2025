@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>lab_6</title>
+</head>
+
+<body>
+    <h1>Lab 6</h1>
+
+    <h2>Leap year</h2>
+    <form method="get" action="./leap_year.php">
+        <label>Year</label>
+        <input name="year" type="number">
+        <input type="submit" value="check">
+    </form>
+
+    <h2>Translator</h2>
+    <form method="get" action="./translator.php">
+        <label>Number</label>
+        <input name="number" type="number">
+        <input type="submit" value="translate">
+    </form>
+
+    <h2>Zodiac sign</h2>
+    <form method="get" action="./zodiac _sign.php">
+        <label>Date</label>
+        <input name="date" type="date">
+        <input type="submit" value="find out the zodiac sign">
+    </form>
+
+    <h2>Lucky number</h2>
+    <form method="get" action="./lucky_number.php">
+        <label>Lucky number</label>
+        <input name="start" type="number" min="100000" max="999999" required>
+        <input name="end" type="number" min="100000" max="999999" required>
+        <input type="submit" value="find out the lucky number">
+    </form>
+
+</body>
+
+</html>

@@ -1,3 +1,5 @@
+<?php require_once "./post.php"
+?>
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -11,47 +13,26 @@
 </head>
 
 <body>
+    <?php
+        $posts = file_get_contents('./data/posts.json', true);
+        $users = file_get_contents('./data/users.json', true);
+        $posts_decode = json_decode($posts, true);
+        $users_decode = json_decode($users, true);
+        // print_r($users_decode);
+    ?>
     <nav class="menu">
         <img class="menu_item" src="./images/home_menu_item.svg" alt="Домашняя страница">
         <img class="menu_item" src="./images/user_menu_item.svg" alt="Профиль">
         <img class="menu_item" src="./images/plus_menu_item.svg" alt="Добавить пост">
     </nav>
     <div class="main_content">
-        <article class="post">
-            <div class="post_header">
-                <div class="post_header_person-information">
-                    <img class="post_header_person-image" src="./images/user_photo.jpg" alt="фото профиля">
-                    <h2 class="post_header_person-name">Ваня Денисов</h2>
-                </div>
-                <img class="post_header_person-editicon" src="./images/edit_icon.svg" alt="редактировать">
-            </div>
-            <img src="./images/post_photo.jpg" alt="фотография поста">
-
-            <div class="post_likes">
-                <img src="./images/hurt_icon.png" alt="лайк">
-                <p>203</p>
-            </div>
-            <p class="post_text">
-                Так красиво сегодня на улице! Настоящая зима))
-                Вспоминается Бродский: «Поздно ночью,
-                в уснувшей долине,на самом дне, в гор
-            </p>
-            <p class="post_time">2 часа назад</p>
-        </article>
-
-        <article class="post">
-            <div class="post_header_person-information">
-                <img class="post_header_person-image" src="./images/user2_photo.jpg" alt="фото профиля">
-                <h2 class="post_header_person-name">Лиза Дёмина</h2>
-            </div>
-            <img src="./images/post2_photo.jpg" alt="фотография поста">
-
-            <div class="post_likes">
-                <img src="./images/hurt_icon.png" alt="лайк">
-                <p>534</p>
-            </div>
-            <p class="post_time">1 день назад</p>
-        </article>
+       <?php
+            foreach($posts_decode as $post) {
+                $userIndex = array_search($post['userId'], array_column($users_decode, 'id'));
+                // print_r($user);
+                generatePosts($post, $users_decode[$userIndex]); 
+            }
+       ?>
     </div>
 </body>
 

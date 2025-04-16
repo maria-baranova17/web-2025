@@ -1,0 +1,24 @@
+[
+    {
+        "id": 1,
+        "userId": 4,
+        "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "time": 1108584000,
+        "likes": 0
+    },
+    {
+        "id": 2,
+        "userId": 4,
+        "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "time": 1108584000,
+        "likes": 0
+    },
+    {
+        "id": 3,
+        "userId": 4,
+        "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "time": 1108584000,
+        "likes": 0
+    }
+]
+
