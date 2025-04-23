@@ -1,7 +1,31 @@
-<?php 
-require_once "./template_profile.php";
-require_once "./getUser.php"
-?>
+<?php
+        require_once "./functions.php";
+
+        if ($_SERVER["REQUEST_METHOD"] == "GET") {
+            if (!isset($_GET['user_id'])) {
+                header('Location: /home.php');
+                exit;
+            }
+            
+            $user_id = $_GET['user_id'];  
+
+            $file = file_get_contents('./data/users.json', true);
+            $users_data = json_decode($file, true);
+            $user = getUser($user_id, $users_data);
+
+            if (empty($user)) {
+                header('Location: /home.php', true);
+                exit;
+            }   
+            
+            $posts_data = file_get_contents('./data/posts.json', true);
+            $posts = json_decode($posts_data, true);
+            $user_posts = getUserPosts($user_id, $posts);
+
+        }
+
+    ?>
+
 <!DOCTYPE html>
 <html lang="ru">
 
@@ -16,30 +40,24 @@ require_once "./getUser.php"
 </head>
 
 <body>
-    <?php
-        $file = file_get_contents('./data/users.json', true);
-        $json = json_decode($file, true);
-
-        if ((isset($_GET['userId'])) && (is_numeric($urlUserId))) {
-            $urlUserId = $_GET['userId'];
-            $profile = GetUser($numUrlUserId, $json);
-            if (!$profile) {
-                // echo headers_sent();
-                header('Location: ../home', true);
-                exit;
-            }   
-        } 
-    ?>
     <nav class="menu">
-        <img class="menu_item" src="./images/home_menu_item.svg" alt="Домашняя страница">
-        <img class="menu_item" src="./images/user_menu_item.svg" alt="Профиль">
-        <img class="menu_item" src="./images/plus_menu_item.svg" alt="Добавить пост">
+        <img class="menu__item" src="./images/home_menu_item.svg" alt="Домашняя страница">
+        <img class="menu__item" src="./images/user_menu_item.svg" alt="Профиль">
+        <img class="menu__item" src="./images/plus_menu_item.svg" alt="Добавить пост">
     </nav>
-    <div class="main_content">
-         <?php
-            generateProfile($profile); 
-
-       ?>
+    <div class="profile">
+        <img class="profile__photo" src="./images/<?= $user["avatar"] ?>" alt="фото профиля">
+        <h1 class="profile__name"><?= $user["first_name"] . " " . $user["last_name"] ?></h1>
+        <p class="profile__bio"><?= $user['bio'] ?></p>
+        <div class="profile__information">
+            <img src="./images/posts_icon.svg" alt="пост">
+            <p><?= count($user_posts) ?> posts</p>
+        </div>
+        <div class="profile__posts">
+            <?php foreach ($user_posts as $post): ?>
+                <img class="profile__image" src="./images/<?= $post["images"][0]["image"] ?>" alt="изображение поста">
+            <?php endforeach; ?>
+        </div>
     </div>
 </body>
 

@@ -1,8 +1,23 @@
 [
     {
-        "id": 4,
-        "name": "John",
-        "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet",
-        "posts": 15
+        "user_id": 1,
+        "first_name": "John",
+        "last_name": "Beses",
+        "avatar": "profile_photo.jpg",
+        "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet"
+    },
+    {
+        "user_id": 2,
+        "first_name": "Ian",
+        "last_name": "Beses",
+        "avatar": "profile_photo.jpg",
+        "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet"
+    },
+    {
+        "user_id": 3,
+        "first_name": "Gabe",
+        "last_name": "Beses",
+        "avatar": "profile_photo.jpg",
+        "bio": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Lorem ipsum dolor sit amet"
     }
 ]

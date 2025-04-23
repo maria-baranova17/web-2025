@@ -1,24 +1,147 @@
 [
     {
-        "id": 1,
-        "userId": 4,
-        "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-        "time": 1108584000,
-        "likes": 0
+        "post_id": 1,
+        "user_id": 1,
+        "images": [
+            {
+                "image_id": 1,
+                "image": "post1.jpg"
+            },
+            {
+                "image_id": 2,
+                "image": "defaut.png"
+            },
+            {
+                "image_id": 3,
+                "image": "defaut.png"
+            }
+        ],
+        "contetnt": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "updated_at": 1744833480,
+        "like_count": 0,
+        "first_name": "John",
+        "last_name": "Beses",
+        "avatar": "defaut.png"
     },
     {
-        "id": 2,
-        "userId": 4,
-        "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-        "time": 1108584000,
-        "likes": 0
+        "post_id": 2,
+        "user_id": 1,
+        "images": [
+            {
+                "image_id": 1,
+                "image": "post2.jpg"
+            },
+            {
+                "image_id": 2,
+                "image": "defaut.png"
+            },
+            {
+                "image_id": 3,
+                "image": "defaut.png"
+            }
+        ],
+        "contetnt": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "updated_at": 1108584000,
+        "like_count": 0,
+        "first_name": "John",
+        "last_name": "Beses",
+        "avatar": "defaut.png"
     },
     {
-        "id": 3,
-        "userId": 4,
-        "text": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
-        "time": 1108584000,
-        "likes": 0
+        "post_id": 3,
+        "user_id": 1,
+        "images": [
+            {
+                "image_id": 1,
+                "image": "post4.jpg"
+            },
+            {
+                "image_id": 2,
+                "image": "defaut.png"
+            },
+            {
+                "image_id": 3,
+                "image": "defaut.png"
+            }
+        ],
+        "contetnt": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "updated_at": 1108584000,
+        "like_count": 0,
+        "first_name": "John",
+        "last_name": "Beses",
+        "avatar": "defaut.png"
+    },
+    {
+        "post_id": 4,
+        "user_id": 2,
+        "images": [
+            {
+                "image_id": 1,
+                "image": "post1.jpg"
+            },
+            {
+                "image_id": 2,
+                "image": "post1.jpg"
+            },
+            {
+                "image_id": 3,
+                "image": "post1.jpg"
+            }
+        ],
+        "contetnt": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "updated_at": 1108584000,
+        "like_count": 0,
+        "first_name": "John",
+        "last_name": "Beses",
+        "avatar": "defaut.png"
+    },
+    {
+        "post_id": 5,
+        "user_id": 3,
+        "images": [
+            {
+                "image_id": 1,
+                "image": "defaut.png"
+            },
+            {
+                "image_id": 2,
+                "image": "defaut.png"
+            },
+            {
+                "image_id": 3,
+                "image": "defaut.png"
+            }
+        ],
+        "contetnt": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "updated_at": 1108584000,
+        "like_count": 0,
+        "first_name": "John",
+        "last_name": "Beses",
+        "avatar": "defaut.png"
+    },
+    {
+        "post_id": 6,
+        "user_id": 2,
+        "images": [
+            {
+                "image_id": 1,
+                "image": "post1.jpg"
+            },
+            {
+                "image_id": 2,
+                "image": "defaut.png"
+            },
+            {
+                "image_id": 3,
+                "image": "defaut.png"
+            }
+        ],
+        "contetnt": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit.",
+        "updated_at": 1108584000,
+        "like_count": 0,
+        "first_name": "John",
+        "last_name": "Beses",
+        "avatar": "defaut.png"
     }
 ]
 

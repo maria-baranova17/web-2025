@@ -20,12 +20,12 @@ body {
     padding-top: 40px;
 }
 
-.menu_item {
+.menu__item {
     width: 40px;
     height: 40px;
 }
 
-.main_content {
+.main__content {
     padding-top: 73px;
     display: flex;
     flex-direction: column;
@@ -43,37 +43,37 @@ body {
 
 }
 
-.post_header {
+.post__header {
     display: flex;
     justify-content: space-between;
 }
 
-.post_header_person-information {
+.post__user {
     display: flex;
     max-width: 150px;
     gap: 10px;
     align-items: center;
 }
 
-.post_header_person-name {
+.post__name {
     font: 500 15px/18px "Golos Text", sans-serif;
     line-height: 18px;
     color: black;
     text-decoration: none;
 }
 
-.post_header_person-image {
+.post__image {
     width: 32px;
     height: 32px;
     border-radius: 6px;
 }
 
-.post_header_person-editicon {
+.post__edit-icon {
     width: 24px;
     height: 24px;
 }
 
-.post_likes {
+.post__likes {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -88,12 +88,12 @@ body {
 
 }
 
-.post_text {
+.post__text {
     font: 15px/18px "Golos Text", sans-serif;
     color: rgba(34, 34, 34, 1);
 }
 
-.post_time {
+.post__time {
     font: 14px/18px "Golos Text", sans-serif;
     color: rgba(34, 34, 34, 0.5);
 }

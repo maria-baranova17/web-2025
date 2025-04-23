@@ -20,31 +20,31 @@ body {
     padding-top: 40px;
 }
 
-.menu_item {
+.menu__item {
     width: 40px;
     height: 40px;
 }
 
-.main_content {
+.profile {
     padding: 73px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.profile_photo {
+.profile__photo {
     width: 123px;
     height: 123px;
     border-radius: 16px;
 }
 
-.profile_name {
+.profile__name {
     font: 500 32px/32px "Golos Text", sans-serif;
     letter-spacing: -0.25px;
     margin-top: 20px;
 }
 
-.profile_text {
+.profile__bio {
     font: 400 14px/18px "Golos Text", sans-serif;
     letter-spacing: -0.15px;
     max-width: 361px;
@@ -53,7 +53,7 @@ body {
     margin-bottom: 12px;
 }
 
-.profile_information {
+.profile__information {
     display: flex;
     gap: 16px;
     background-color: #F2F3F5;
@@ -63,13 +63,14 @@ body {
     margin-bottom: 42px;
 }
 
-.profile_posts {
+.profile__posts {
     display: flex;
     max-width: 972px;
     flex-wrap: wrap;
+    width: 972px;
 }
 
-.profile_post {
+.profile__image {
     width: 322px;
     height: 322px;
 }
